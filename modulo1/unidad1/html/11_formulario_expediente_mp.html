@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1 align="center">  Registro del usuario</h1>
+    <form action="procesar.php" method="post">
+        <table border="0">
+            <tr >
+                <th>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </th>
+            </tr>
+            <tr >
+                <th>
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id="correo" name="correo">
+                </th>
+            
+            </tr>
+            <tr >
+                <th>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha">
+                </th>
+            </tr>
+            <tr >
+                <td>
+                    <label for="fecha">Genero: </label>
+                    <input type="radio" id="m" name="genero" value="M"><label for="m"> Masculino </label>
+                    <input type="radio" id="f" name="genero" value="F"><label for="f"> Femenino </label>
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <label for="pais">  Pais</label>
+                    <select id="pais"name="pais">
+                        <option value=""> Selecione...</option>
+                        <option value="ec"> Ecuador </option>
+                        <option value="mx"> Mexico </option>
+                        <option value="arg"> Argenitna </option>
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <label for="Ciudad">  Ciudad</label>
+                    <select id="Ciudad"name="Ciudad">
+                        <option value=""> Selecione...</option>
+                        <option value="ui">  Quito </option>
+                        <option value="gui"> Guayaquil </option>
+                        <option value="cue"> Cuenca </option><br><br><br>
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <label for="comentarios">Comentarios: </label>
+                    <textarea type="textera" id="comentarios" name="comentarios" rows="5 "></textarea><br>
+                    
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <imput type="checkbox" id="acepto" name="acepto" required>
+                    <label for="paisaceptado"> Acepto los terminos y condiciones </label>
+                </td>
+            </tr>
+
+
+        </table>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form> 
+</body>
+</html>
