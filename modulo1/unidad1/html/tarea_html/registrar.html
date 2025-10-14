@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - Aeropuerto.</title>
+</head>
+<body>
+  <header>
+    <h1 align="center">Formulario de Contacto</h1>
+    <nav align="center">
+      <a href="index.html">Inicio</a> |
+      <a href="vuelos.html">Horarios</a> |
+      <a href="registrar.html">registrar</a> |
+      <a href="viajes.html">Mis viajes</a> |
+      <a href="acerca.html">Acerca de</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Registrarse</legend>
+
+        <p>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+          <label for="correo">Correo Electrónico:</label><br>
+          <input type="email" id="correo" name="correo" required>
+        </p>
+
+        <p>
+          <label for="fecha">Fecha de nacimiento:</label><br>
+          <input type="date" id="fecha" name="fecha">
+        </p>
+
+        <p>
+          <label>Género:</label><br>
+          <input type="radio" id="m" name="genero" value="M">
+          <label for="m">Masculino</label><br>
+          <input type="radio" id="f" name="genero" value="F">
+          <label for="f">Femenino</label>
+        </p>
+
+        <p>
+          <label for="pais">País:</label><br>
+          <select id="pais" name="pais">
+            <option value="">Seleccione...</option>
+            <option value="ec">Ecuador</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="Ciudad">Ciudad:</label><br>
+          <select id="Ciudad" name="Ciudad">
+            <option value="">Seleccione...</option>
+            <option value="ui">Quito</option>
+            <option value="gui">Guayaquil</option>
+            <option value="cue">Cuenca</option>
+          </select>
+        </p>
+
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+
+      </fieldset>
+    </form>
+  </main>
+
+
+  <footer>
+    <address>
+      Contacto: soporte@latamairlines.com<br>
+      Teléfono: +593 2 123 4567
+    </address>
+  </footer>
+</body>
+</html>
