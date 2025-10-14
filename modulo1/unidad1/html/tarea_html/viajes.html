@@ -12,133 +12,104 @@
       <a href="index.html">Inicio</a> |
       <a href="acerca.html">Acerca</a> |
       <a href="servicios.html">Servicios</a> |
-      <a href="registrar.html">registrar</a> |
+      <a href="registrar.html">Registrar</a> |
       <a href="viajes.html">Mis Viajes</a>
     </nav>
     <hr>
   </header>
 
-  <main>
-    <section>
-      <h2>Mi Historial de Vuelos</h2>
-      <article>
-        <table border="1" cellpadding="6" cellspacing="0">
-          <caption><strong>Vuelos Completados</strong></caption>
-          <thead>
-            <tr>
-              <th>N° Vuelo</th>
-              <th>Origen</th>
-              <th>Destino</th>
-              <th>Fecha</th>
-              <th>Aerolínea</th>
-              <th>Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>LA201</td><td>Quito</td><td>Guayaquil</td><td>10/03/2025</td><td>LATAM Airlines</td><td>Completado</td>
-            </tr>
-            <tr>
-              <td>LA310</td><td>Quito</td><td>Lima</td><td>05/05/2025</td><td>LATAM Airlines</td><td>Completado</td>
-            </tr>
-            <tr>
-              <td>AV510</td><td>Guayaquil</td><td>Bogotá</td><td>22/06/2025</td><td>Avianca</td><td>Completado</td>
-            </tr>
-            <tr>
-              <td>LA702</td><td>Quito</td><td>Madrid</td><td>14/07/2025</td><td>LATAM Airlines</td><td>Completado</td>
-            </tr>
-            <tr>
-              <td>EQ441</td><td>Quito</td><td>Cuenca</td><td>03/08/2025</td><td>Aeroregional</td><td>Retrasado</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-    </section>
+  <!-- Usamos una tabla para poner el historial a la izquierda y el próximo viaje a la derecha -->
+  <table width="100%" border="0" cellpadding="10" cellspacing="0">
+    <tr valign="top">
+      <td width="65%">
+        <!-- HISTORIAL DE VIAJES -->
+        <section>
+          <h2 align="center">Mi Historial de Vuelos</h2>
+          <article>
+            <table align="center" border="1" cellpadding="6" cellspacing="0">
+              <caption><strong>Vuelos Completados</strong></caption>
+              <thead>
+                <tr>
+                  <th>N° Vuelo</th>
+                  <th>Origen</th>
+                  <th>Destino</th>
+                  <th>Fecha</th>
+                  <th>Aerolínea</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>LA201</td><td>Quito</td><td>Guayaquil</td><td>10/03/2025</td><td>LATAM Airlines</td><td>Completado</td></tr>
+                <tr><td>LA310</td><td>Quito</td><td>Lima</td><td>05/05/2025</td><td>LATAM Airlines</td><td>Completado</td></tr>
+                <tr><td>AV510</td><td>Guayaquil</td><td>Bogotá</td><td>22/06/2025</td><td>Avianca</td><td>Completado</td></tr>
+                <tr><td>LA702</td><td>Quito</td><td>Madrid</td><td>14/07/2025</td><td>LATAM Airlines</td><td>Completado</td></tr>
+                <tr><td>EQ441</td><td>Quito</td><td>Cuenca</td><td>03/08/2025</td><td>Aeroregional</td><td>Retrasado</td></tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </td>
 
-    <aside>
-      <h2>Mi Próximo Viaje</h2>
-      <table border="1" cellpadding="6" cellspacing="0">
-        <caption><strong>Detalle del Boleto</strong></caption>
-        <thead>
-          <tr>
-            <th>Dato</th>
-            <th>Información</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Nombre del pasajero</td><td>Juan Pérez</td>
-          </tr>
-          <tr>
-            <td>N° de vuelo</td><td>LA1604</td>
-          </tr>
-          <tr>
-            <td>Origen</td><td>Quito (UIO)</td>
-          </tr>
-          <tr>
-            <td>Destino</td><td>Madrid (MAD)</td>
-          </tr>
-          <tr>
-            <td>Fecha</td><td>20/12/2025</td>
-          </tr>
-          <tr>
-            <td>Hora de salida</td><td>21:15</td>
-          </tr>
-          <tr>
-            <td>Puerta</td><td>C5</td>
-          </tr>
-          <tr>
-            <td>Asiento</td><td>12A</td>
-          </tr>
-          <tr>
-            <td>Estado</td><td>Confirmado</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><strong>Nota:</strong> Recuerde presentarse al aeropuerto con al menos 3 horas de anticipación.</p>
-    </aside>
+      <td width="35%">
+        <!-- PRÓXIMO VIAJE -->
+        <aside>
+          <h2 align="center">Mi Próximo Viaje</h2>
+          <table border="1" cellpadding="6" cellspacing="0" align="center">
+            <caption><strong>Detalle del Boleto</strong></caption>
+            <thead>
+              <tr>
+                <th>Dato</th>
+                <th>Información</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Nombre del pasajero</td><td>Juan Pérez</td></tr>
+              <tr><td>N° de vuelo</td><td>LA1604</td></tr>
+              <tr><td>Origen</td><td>Quito (UIO)</td></tr>
+              <tr><td>Destino</td><td>Madrid (MAD)</td></tr>
+              <tr><td>Fecha</td><td>20/12/2025</td></tr>
+              <tr><td>Hora de salida</td><td>21:15</td></tr>
+              <tr><td>Puerta</td><td>C5</td></tr>
+              <tr><td>Asiento</td><td>12A</td></tr>
+              <tr><td>Estado</td><td>Confirmado</td></tr>
+            </tbody>
+          </table>
+          <p><strong>Nota:</strong> Recuerde presentarse al aeropuerto con al menos 3 horas de anticipación.</p>
+        </aside>
+      </td>
+    </tr>
+  </table>
 
-    <section>
-      <h2>Información del Aeropuerto</h2>
-      <p>
-        El Aeropuerto LATAM Airlines ofrece servicios de <strong>check-in digital</strong>,
-        transporte gratuito entre terminales, y zonas de espera cómodas con Wi-Fi gratuito.
-      </p>
-      <p>
-        Para mayor información sobre vuelos, horarios y servicios adicionales visite:
-        <a href="https://www.latamairlines.com/ec/es" target="_blank" rel="noopener">
-          www.latamairlines.com
-        </a>.
-      </p>
-      <table border="1" cellpadding="6" cellspacing="0">
-        <caption><strong>Servicios Disponibles para los Usuarios</strong></caption>
-        <thead>
-          <tr>
-            <th>Servicio</th>
-            <th>Ubicación</th>
-            <th>Horario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Atención al Cliente</td><td>Planta baja - Terminal principal</td><td>24 horas</td>
-          </tr>
-          <tr>
-            <td>Equipaje Extraviado</td><td>Zona de Arribos</td><td>06:00 a 23:00</td>
-          </tr>
-          <tr>
-            <td>Restaurantes</td><td>Zona Comercial</td><td>05:00 a 00:00</td>
-          </tr>
-          <tr>
-            <td>Salas VIP</td><td>Puertas C y D</td><td>24 horas</td>
-          </tr>
-          <tr>
-            <td>Wi-Fi Gratuito</td><td>Todo el aeropuerto</td><td>Siempre disponible</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+  <section>
+    <h2>Información del Aeropuerto</h2>
+    <p>
+      El Aeropuerto LATAM Airlines ofrece servicios de <strong>check-in digital</strong>,
+      transporte gratuito entre terminales, y zonas de espera cómodas con Wi-Fi gratuito.
+    </p>
+    <p>
+      Para mayor información sobre vuelos, horarios y servicios adicionales visite:
+      <a href="https://www.latamairlines.com/ec/es" target="_blank" rel="noopener">
+        www.latamairlines.com
+      </a>.
+    </p>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <caption><strong>Servicios Disponibles para los Usuarios</strong></caption>
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Ubicación</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Atención al Cliente</td><td>Planta baja - Terminal principal</td><td>24 horas</td></tr>
+        <tr><td>Equipaje Extraviado</td><td>Zona de Arribos</td><td>06:00 a 23:00</td></tr>
+        <tr><td>Restaurantes</td><td>Zona Comercial</td><td>05:00 a 00:00</td></tr>
+        <tr><td>Salas VIP</td><td>Puertas C y D</td><td>24 horas</td></tr>
+        <tr><td>Wi-Fi Gratuito</td><td>Todo el aeropuerto</td><td>Siempre disponible</td></tr>
+      </tbody>
+    </table>
+  </section>
 
   <footer>
     <hr>
