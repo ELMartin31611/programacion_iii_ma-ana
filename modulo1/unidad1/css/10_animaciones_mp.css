@@ -1,0 +1,37 @@
+
+body { 
+  margin: 0; 
+  height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background: linear-gradient(#eaf6ff,#f8fbff); 
+  font-family: Arial, sans-serif; 
+
+}
+
+
+.pista { 
+  width: 90%; 
+  height: 200px; 
+  background: #d9eefc; 
+  border-radius: 10px; 
+  position: relative; 
+  overflow: hidden; 
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06); 
+}
+
+
+.avion-animado { 
+  position: absolute; 
+  left: -10%; 
+  top: 40%; 
+  font-size: 3rem; 
+  animation: rodar 4s linear infinite; }
+
+  
+@keyframes rodar {
+  0% { left: -15%; transform: translateY(0) rotate(-10deg); }
+  50% { left: 60%; transform: translateY(-6px) rotate(5deg); }
+  100% { left: 110%; transform: translateY(0) rotate(-10deg); }
+}

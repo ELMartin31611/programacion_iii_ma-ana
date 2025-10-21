@@ -1,0 +1,11 @@
+.fondos {
+    color:blueviolet;
+    background-size:cover ;
+    background-image: url("fotos.jpg");
+    background-position: center;
+    background-color: aqua;
+    padding: 20px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 24px;
+}

@@ -1,0 +1,59 @@
+
+body { 
+    font-family: Georgia, "Times New Roman", serif; 
+    margin: 2rem; 
+    background: #fbfcfd; 
+    color: #111; 
+}
+
+
+.info { 
+    background: #ffffff; 
+    padding: 1.4rem; 
+    border-radius: 10px; 
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05); 
+    max-width: 640px; 
+
+}
+
+
+.info h1 { 
+    margin-top: 0; 
+    font-size: 1.6rem; 
+    color: #0b3550; 
+
+}
+
+
+.detalle { 
+    color: #555; 
+    margin-bottom: 0.8rem; 
+
+}
+
+
+.datos { 
+    line-height: 1.6; 
+
+}
+
+
+.etq { 
+    color: #2b7fa0; 
+    font-weight: 600; 
+    margin-right: 0.4rem; 
+
+}
+
+
+strong { 
+    font-weight: 700; 
+
+}
+
+
+em { 
+    color: #28a745; 
+    font-style: normal; 
+
+}
