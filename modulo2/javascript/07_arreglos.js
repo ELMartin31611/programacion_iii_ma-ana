@@ -13,7 +13,7 @@ console.log(numeros[0]);
 console.log(numeros[3]);
 
 console.log("modificar elementos del array");
-numeros[0]=100;
+numeros[0]=100
 console.log(numeros);
 
 
@@ -59,5 +59,3 @@ console.log("Iteracion con for Each");
 numeros.forEach(function(valor,indice){
     console.log(indice,valor);
 });
-
-
