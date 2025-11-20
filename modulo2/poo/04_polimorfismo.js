@@ -44,3 +44,5 @@ console.log(diseJuan.calcularVacaciones());
 console.log(progPedro.horasExtra(5));
 console.log(diseJuan.horasExtra(4));
 
+
+
