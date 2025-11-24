@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>03 - Cambio de estilos | Control de Vuelos __mp</title>
+<style>
+body{font-family:Arial;margin:18px}
+.panel{padding:12px;border-radius:8px}
+.estado-programado{background:#e6ffed}
+.estado-envuelo{background:#fff7db}
+.estado-retrasado{background:#ffecec}
+.estado-cancelado{background:#f3e8ff}
+</style>
+</head>
+<body>
+<h2>Panel de estado</h2>
+<select id="estado">
+  <option>Programado</option>
+  <option>En vuelo</option>
+  <option>Retrasado</option>
+  <option>Cancelado</option>
+</select>
+<div id="panel-estado" class="panel">Estado actual: <span id="texto-estado">Programado</span></div>
+<button id="btnDownload">Descargar estado</button>
+<script src="03_cambio_estilos__mp.js"></script>
+</body>
+</html>

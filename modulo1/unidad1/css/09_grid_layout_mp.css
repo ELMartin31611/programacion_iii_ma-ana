@@ -1,0 +1,32 @@
+
+body { 
+    font-family: "Lucida Grande", Tahoma, Verdana, sans-serif; 
+    margin: 2rem; 
+    background: #fbfcfd; 
+
+}
+
+
+.horario { 
+    display: grid; 
+    grid-template-columns: 120px 1fr 1fr; 
+    gap: 0.4rem; 
+    max-width: 760px; }
+
+    
+.col { 
+    font-weight: 800; 
+    padding: 0.6rem; 
+    background: #0b3550; 
+    color: white;
+     border-radius: 6px; }
+
+
+.cell { 
+    padding: 0.6rem; 
+    background: #fff; 
+    border-radius: 6px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+
+
+.horario .cell:nth-child(odd) { background: #f6fbff; }

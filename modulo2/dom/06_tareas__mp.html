@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>06 - CRUD Vuelos | Control de Vuelos __mp</title>
+<style>body{font-family:Arial;margin:18px}table{width:100%;border-collapse:collapse}th,td{padding:8px;border:1px solid #ddd}</style>
+</head>
+<body>
+<h2>Gestión de vuelos</h2>
+<input id="filtro" placeholder="Filtrar por código, origen o destino">
+<button id="btnFiltro">Filtrar</button>
+<table id="tabla">
+<thead><tr><th>Código</th><th>Origen</th><th>Destino</th><th>Hora</th><th>Estado</th><th>Acciones</th></tr></thead>
+<tbody id="cuerpo"></tbody>
+</table>
+<h3>Agregar / Editar</h3>
+<form id="formVuelo">
+  <input id="codigoV" placeholder="Código" required>
+  <input id="origenV" placeholder="Origen" required>
+  <input id="destinoV" placeholder="Destino" required>
+  <input id="horaV" type="time" required>
+  <select id="estadoV"><option>Programado</option><option>En vuelo</option><option>Aterrizado</option><option>Retrasado</option><option>Cancelado</option></select>
+  <input type="hidden" id="idx">
+  <button id="guardar" type="submit">Guardar</button>
+  <button id="limpiar" type="button">Limpiar</button>
+</form>
+<button id="exportData">Descargar vuelos</button>
+<script src="06_tareas__mp.js"></script>
+</body>
+</html>

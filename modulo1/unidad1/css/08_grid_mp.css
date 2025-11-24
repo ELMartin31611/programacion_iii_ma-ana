@@ -1,0 +1,27 @@
+
+body { 
+    font-family: 'Arial', sans-serif; 
+    margin: 2rem; 
+    background: #f8fbfc; 
+}
+
+
+.terminal { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+}
+
+
+.zona { background: #fff; 
+    padding: 1.4rem; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06); 
+    text-align: center; 
+}
+
+
+.zona--A { background: linear-gradient(#e6f7ff,#cfeefd); }
+.zona--B { background: linear-gradient(#fff3e6,#ffe6cc); }
+.zona--C { background: linear-gradient(#fef3ff,#f5e6ff); }
+.zona--D { background: linear-gradient(#f0f7ea,#e6f4d6); }

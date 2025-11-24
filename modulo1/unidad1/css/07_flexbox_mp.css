@@ -1,0 +1,36 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 2rem; 
+    background: #fbfdff; 
+ 
+    
+}
+
+
+.puertas { 
+    display: flex; 
+    gap: 1rem; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+
+}
+
+
+.puerta { 
+    background: #ffffff; 
+    padding: 1.2rem 1.6rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06); 
+    min-width: 100px; 
+    text-align: center; 
+    font-weight: 700; 
+
+}
+
+
+.puerta:nth-child(2) { 
+    transform: scale(1.05); 
+
+}
