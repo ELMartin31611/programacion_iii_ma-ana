@@ -1,17 +1,28 @@
-var usuario1 = {
-    id: 12,
-    nombre: 'Jose Garcia Marquez'
+
+interface Usuario_mp {
+  id: number;
+  nombre: string;
+  correo: string;
+  activo: boolean;
+}
+
+function mostrarUsuario_mp(usuario: Usuario_mp): void {
+  if (!usuario.activo) {
+    console.log("El usuario no está activo");
+  } else {
+    console.log("Usuario activo");
+  }
+
+  console.log("ID:", usuario.id);
+  console.log("Nombre:", usuario.nombre);
+  console.log("Correo:", usuario.correo);
+}
+
+let usuario1: Usuario_mp = {
+  id: 1,
+  nombre: "Martin",
+  correo: "martin@gmail.com",
+  activo: true
 };
-var usuario2 = {
-    id: 13,
-    nombre: 'Pablo Escobar',
-    correo: 'pablo@escobar.com'
-};
-console.log(usuario1);
-console.log(usuario1.id);
-console.log(usuario1.nombre);
-console.log(usuario1.correo);
-console.log(usuario2);
-console.log(usuario2.id);
-console.log(usuario2.nombre);
-console.log(usuario2.correo);
+
+mostrarUsuario_mp(usuario1);

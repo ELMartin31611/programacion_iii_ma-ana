@@ -1,23 +1,4 @@
-// funcion basica
-function saludar(nombre) {
-    return "Hola ".concat(nombre);
-}
-console.log(saludar('Francisco'));
-// funcion flecha
-var sumar = function (a, b) {
-    return a + b;
-};
-console.log(sumar(5, 5));
-function saludarDeNuevo() {
-    console.log("Hola");
-    console.log("Bienvenido a Typescript");
-}
-saludarDeNuevo();
-function calcularAreaCirculo(radio) {
-    return Math.PI * radio * radio;
-}
-function calcularAreaCirculoVoid(radio) {
-    console.log(Math.PI * radio * radio);
-}
-console.log(calcularAreaCirculo(5));
-calcularAreaCirculoVoid(7);
+function calcularAsientosLibres(capacidad: number, ocupados: number): number { return capacidad - ocupados }
+function formateaVuelo(codigo: string, origen: string, destino: string): string { return `${codigo} ${origen}→${destino}` }
+console.log(calcularAsientosLibres(180,120))
+console.log(formateaVuelo("AV101","Quito","Guayaquil"))

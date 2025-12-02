@@ -1,6 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var _09_acceso_1 = require("./09_acceso");
-var myLibro = new _09_acceso_1.Libro('la hora de la verdad');
-console.log(myLibro.titulo);
-console.log(myLibro.getCota());
+class Registro {
+  private entradas: string[] = []
+  add(e: string){ this.entradas.push(e) }
+  getUltima(): string | null { return this.entradas.length ? this.entradas[this.entradas.length - 1] : null }
+}
+const r = new Registro()
+r.add("AV101 aterrizó")
+console.log(r.getUltima())

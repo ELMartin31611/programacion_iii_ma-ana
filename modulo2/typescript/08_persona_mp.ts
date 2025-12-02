@@ -1,5 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var _07_persona_1 = require("./07_persona");
-var ana = new _07_persona_1.Persona('Ana', 27);
-ana.saludar();
+class Tripulante {
+  nombre: string
+  edad: number
+  nivel: string
+  constructor(nombre: string, edad: number, nivel = "Junior"){ this.nombre = nombre; this.edad = edad; this.nivel = nivel }
+  info(): string { return `${this.nombre} ${this.nivel} ${this.edad}` }
+}
+const t = new Tripulante("Ana",28)
+console.log(t.info())

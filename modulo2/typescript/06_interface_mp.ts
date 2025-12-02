@@ -1,19 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var usuario1 = {
-    id: 12,
-    nombre: 'Jose Garcia Marquez'
-};
-var usuario2 = {
-    id: 13,
-    nombre: 'Pablo Escobar',
-    correo: 'pablo@escobar.com'
-};
-console.log(usuario1);
-console.log(usuario1.id);
-console.log(usuario1.nombre);
-console.log(usuario1.correo);
-console.log(usuario2);
-console.log(usuario2.id);
-console.log(usuario2.nombre);
-console.log(usuario2.correo);
+interface IServicio { nombre: string; precio: number; activo?: boolean }
+const s1: IServicio = { nombre: "Combustible", precio: 1200 }
+const s2: IServicio = { nombre: "Pista", precio: 300, activo: true }
+console.log(s1, s2)

@@ -1,14 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Persona = void 0;
-var Persona = /** @class */ (function () {
-    function Persona(nombre, edad) {
-        this.nombre = nombre;
-        this.edad = edad;
-    }
-    Persona.prototype.saludar = function () {
-        console.log("Hola, soy ".concat(this.nombre, " y tengo ").concat(this.edad, " a\u00F1os"));
-    };
-    return Persona;
-}());
-exports.Persona = Persona;
+class Empleado {
+  nombre: string
+  puesto: string
+  constructor(nombre: string, puesto: string){ this.nombre = nombre; this.puesto = puesto }
+  presentarse(): string { return `${this.nombre} - ${this.puesto}` }
+}
+const e = new Empleado("Carlos","Piloto")
+console.log(e.presentarse())

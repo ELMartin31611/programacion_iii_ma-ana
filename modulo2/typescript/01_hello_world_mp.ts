@@ -1,2 +1,1 @@
-var mensaje = "Hello, TypeScript!";
-console.log(mensaje);
+console.log("Control de Vuelos - Aeropuerto __mp")
