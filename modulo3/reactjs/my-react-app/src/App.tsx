@@ -1,27 +1,25 @@
-import PromedioNota from './props/PromedioNota';
-import Greeting from './props/Greeting';
-import UserCard from './props/UserCard';
-import ParentButtonOne from './props/ParentButtonOne';
-import ParentInputNotifier from './props/ParentInputNotifier';
-import ParentIncrementButton from './props/ParentIncrementButton';
-import ParentUserList from './props/ParentUserList';
-import ParentLoginForm from './props/ParentLoginForm';
+import AccessWithLimit from './useState/AccessWithLimit';
+import DocumentTitleChanger from './useState/DocumentTitleChanger';
+import HoverFont from './useState/HoverFont';
+import LoginWithLimit from './useState/LoginWithLimit';
+import PostLikes from './useState/PostLikes';
+import CheckboxSummary from './useState/CheckboxSummary';
+import LanguageSwitcher from './useState/LanguageSwitcher';
+import MultiSwitch from './useState/MultiSwitch';
+
 function App() {
 
-  const userData = { name: "Carlos", age: 30, direccion: "condado", telefono: "555-1234" };
-  
   return (
     <>
   
-      <Greeting name="Francisco" />
-      <Greeting name="Ana" />
-      <UserCard user={userData} />
-      <PromedioNota/>
-      <ParentButtonOne/>
-      <ParentIncrementButton/>
-      <ParentInputNotifier/>
-      <ParentUserList/>
-      <ParentLoginForm/>
+      <HoverFont/>
+      <AccessWithLimit/>
+      <LoginWithLimit/>
+      <DocumentTitleChanger/>
+      <PostLikes/>
+      <CheckboxSummary/>
+      <LanguageSwitcher/>
+      <MultiSwitch/>
     </>
 
   ); 
