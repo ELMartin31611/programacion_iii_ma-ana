@@ -18,7 +18,9 @@ export default function CheckboxSummary() {
       <label><input 
       type="checkbox" 
       checked={checked.b} onChange={() => setChecked({ ...checked, z: !checked.z })} /> Z</label>
-      <p>Seleccionado: {Object.entries(checked).filter(([, v]) => v).map(([k]) => k).join(', ') || 'ninguno'}</p>
+      <p>Seleccionado: {
+      Object.entries(checked)
+        .filter(([, v]) => v).map(([k]) => k).join(', ') || 'ninguno'}</p>
     </div>
   );
 }
