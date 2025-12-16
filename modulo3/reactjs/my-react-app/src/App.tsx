@@ -1,21 +1,22 @@
 import { useState } from 'react';
-import { LanguageContext } from './useContext/LanguageContext';
-import LanguageToggle from './useContext/LanguageToggle';
-import { LoginContext } from './useContext/LoginContext';
-import LoginStatus from './useContext/LoginStatus';
+import FocoAutomatico from './useRef/FocoAutomatico';
+import CirculoColorido from './useRef/CirculoColorido';
+import ScrollDemo from './useRef/ScrollDemo';
+import ReproductorSonido from './useRef/ReproductorSonido';
+import MoverCaja from './useRef/MoverCaja';
 
 export default function App() {
   const [lang, setLang] = useState('es');
   const toggleLanguage = () => setLang(prev => (prev === 'es' ? 'en' : 'es'));
 
   return (
-    <><LanguageContext.Provider value={{ lang, toggleLanguage }}>
-      <LanguageToggle />
-    </LanguageContext.Provider>
-
-    <LoginContext.Provider value={{ isLoggedIn, toggleLogin }}>
-        <LoginStatus />
-      </LoginContext.Provider></>
+    <>
+    <FocoAutomatico />
+    <CirculoColorido />
+    <ScrollDemo />
+    <ReproductorSonido />
+    <MoverCaja />
+    </>
   );
 }
 
